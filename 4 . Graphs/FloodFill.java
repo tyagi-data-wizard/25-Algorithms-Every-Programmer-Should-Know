@@ -43,3 +43,39 @@ public class FloodFill {
         }
     }
 }
+
+
+   
+// Description of the above code:
+
+// 1. The `FloodFill` class contains three methods: `floodFill`, `dfs`, and `main`.
+
+// 2. `floodFill` method:
+//    - This method serves as the entry point for the flood fill algorithm.
+//    - It takes four parameters:
+//      - `image`: A 2D integer array representing the image where the flood fill should be performed.
+//      - `sr` and `sc`: The starting row and column coordinates from where the flood fill should begin.
+//      - `newColor`: The new color that should replace the old color in the connected region.
+//    - It gets the dimensions of the `image` (number of rows and columns) and stores them in `rows` and `cols`.
+//    - It retrieves the old color from the `image` at the starting coordinates `(sr, sc)`.
+//    - If the old color is not equal to the new color, it calls the `dfs` method to perform the flood fill.
+
+// 3. `dfs` method:
+//    - This is a recursive depth-first search (DFS) function that performs the actual flood fill.
+//    - It takes six parameters:
+//      - `image`: The 2D integer array representing the image.
+//      - `row` and `col`: The current row and column coordinates being processed.
+//      - `oldColor`: The old color that needs to be replaced.
+//      - `newColor`: The new color to fill the region with.
+//      - `rows` and `cols`: The dimensions of the image.
+//    - It checks if the current coordinates are outside the image boundaries or if the pixel at `(row, col)` does not match the old color. In such cases, it returns, indicating that this branch of the recursion should stop.
+//    - If the conditions are met, it updates the color at `(row, col)` to the new color.
+//    - Then, it recursively calls `dfs` for the four neighboring pixels (up, down, left, and right), continuing the flood fill process.
+
+// 4. `main` method:
+//    - In the `main` method, an example image represented by a 2D array `image` is defined.
+//    - The starting row (`sr`), starting column (`sc`), and the new color (`newColor`) are specified.
+//    - The `floodFill` method is called with these parameters to perform the flood fill.
+//    - Finally, the modified image is printed to the console to display the result.
+
+// The code demonstrates how to use the flood fill algorithm to replace a connected region of pixels with a new color in a 2D image.
