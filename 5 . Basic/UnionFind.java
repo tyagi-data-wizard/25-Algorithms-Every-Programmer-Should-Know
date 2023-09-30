@@ -48,3 +48,7 @@ public class UnionFind {
         System.out.println("Are 2 and 4 connected? " + (uf.find(2) == uf.find(4)));
     }
 }
+
+/*This Java program implements the Union-Find data structure, specifically the disjoint-set data structure.
+    It includes methods for initializing sets, finding the root of a set (with path compression for optimization), and union operation to merge two sets based on their ranks.
+    The `main` method demonstrates the usage by creating a Union-Find instance, performing union operations, and checking the connectivity of elements in different sets.*/
