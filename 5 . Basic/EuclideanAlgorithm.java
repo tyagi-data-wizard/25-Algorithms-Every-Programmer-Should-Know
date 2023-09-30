@@ -13,3 +13,7 @@ public class EuclideanAlgorithm {
         System.out.println("GCD of " + a + " and " + b + " is " + gcdResult);
     }
 }
+
+/*This Java program implements the Euclidean Algorithm to find the greatest common divisor (GCD) of two integers.
+    The `gcd` method takes two integers, `a` and `b`, and recursively calculates the GCD by finding the remainder of the division until the remainder is zero. 
+    The main method demonstrates the usage of the `gcd` method with the integers 48 and 18, printing the result as "GCD of 48 and 18 is [result]".*/
