@@ -96,6 +96,28 @@ public class DFS {
         g.DFS(0);
     }
 }
+/*DFSUtil Method:
+
+This is a private helper method within the Graph class.
+It performs a recursive depth-first traversal starting from a given vertex v.
+It marks the current vertex as visited, prints its value, and then recursively explores all its unvisited adjacent vertices.
+The recursive nature of this function ensures that it explores the graph as deeply as possible along each branch before backtracking.
+DFS Method:
+
+This method serves as the public interface for starting a DFS traversal from a specified vertex.
+It initializes an array of boolean values, visited, to keep track of visited vertices.
+It calls the DFSUtil method with the starting vertex v and the visited array to kickstart the DFS traversal.
+main Method:
+
+In the main method, an instance of the Graph class g is created with 7 vertices.
+Edges are added to the graph using the addEdge method to create a simple graph structure with 7 vertices and connections between them.
+Finally, a DFS traversal is initiated from vertex 0, and the result is printed to the console.
+Overall, this code demonstrates how to perform a depth-first traversal of a graph using a recursive approach. Starting from a specified vertex (in this case, vertex 0), it explores the graph's vertices in a depth-first manner and prints the visited vertices in the order they are traversed.
+*/
+
+
+
+
 /*This Java program demonstrates Depth-First Search (DFS) traversal on a graph. Here's a short description of its key components:
 
 1. `Graph` Class:
