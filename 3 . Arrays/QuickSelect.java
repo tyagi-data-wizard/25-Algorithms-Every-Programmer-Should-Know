@@ -49,3 +49,15 @@ public class QuickSelect {
         System.out.println("The " + (k + 1) + "th smallest element is: " + result);
     }
 }
+
+
+/*The provided Java code defines a `QuickSelect` class that implements the QuickSelect algorithm to find the kth smallest element in an unsorted integer array efficiently. Here's a short description:
+
+- The `quickSelect` method takes an integer array `arr`, a left index `left`, a right index `right`, and an integer `k` as input.
+- It recursively selects a pivot element, partitions the array such that smaller elements are on the left, and larger or equal elements are on the right.
+- If the pivot index equals `k`, it returns the kth smallest element.
+- If `k` is less than the pivot index, it recursively calls `quickSelect` on the left subarray.
+- If `k` is greater than the pivot index, it recursively calls `quickSelect` on the right subarray.
+- The `partition` method chooses a random pivot element within the given range and rearranges elements accordingly.
+- The `swap` method swaps two elements in an integer array.
+- In the `main` method, an example array is provided, and the code finds the 3rd smallest element (k = 2) using the `quickSelect` method and prints the result to the console.*/
