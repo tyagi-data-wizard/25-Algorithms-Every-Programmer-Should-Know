@@ -49,3 +49,23 @@ public class QuickSelect {
         System.out.println("The " + (k + 1) + "th smallest element is: " + result);
     }
 }
+
+/*This Java code implements the QuickSelect algorithm to find the k-th smallest element in an unsorted array. Here's a brief explanation:
+
+The quickSelect method is used to find the k-th smallest element in the arr array. It takes four parameters: the array arr, the left and right indices (initially 0 and arr.length - 1), and the value of k representing the desired rank of the element to find.
+
+If the left index is equal to the right index, it means that the array has only one element, and that element is returned as the result.
+
+The partition method is called to rearrange the elements in the array such that all elements less than the chosen pivot are on the left side, and all elements greater are on the right side. The pivot is chosen randomly from the range [left, right].
+
+Once the partition method returns the index of the pivot after rearrangement, the code compares k with this pivot index. If k is equal to the pivot index, it means the k-th smallest element has been found, and it is returned as the result.
+
+If k is less than the pivot index, it means the desired element is on the left side of the pivot, so the quickSelect method is called recursively on the left subarray [left, pivotIndex - 1].
+
+If k is greater than the pivot index, it means the desired element is on the right side of the pivot, so the quickSelect method is called recursively on the right subarray [pivotIndex + 1, right].
+
+The partition method is a crucial part of the algorithm, which rearranges elements in a way that allows for efficient searching for the k-th smallest element.
+
+In the main method, an example array arr is defined, and the code aims to find the 3rd smallest element (k = 2). The result is printed to the console.
+
+For the given example array {3, 2, 1, 5, 6, 4} and k = 2, the output will be: "The 3rd smallest element is: 3," as the 3rd smallest element in the array is 3.*/
