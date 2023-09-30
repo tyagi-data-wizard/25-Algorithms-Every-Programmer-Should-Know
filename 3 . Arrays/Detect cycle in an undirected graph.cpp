@@ -120,4 +120,31 @@ int main()
 				: cout << "Graph doesn't contain cycle\n";
 
 	return 0;
-}
+}/*This C++ program checks for the presence of cycles in an undirected graph using depth-first search (DFS). Here's a concise description of its key components and functionality:
+
+Graph class:
+
+Represents an undirected graph with a specified number of vertices (V).
+Stores graph adjacency information using an array of linked lists (adj).
+Provides methods for adding edges and checking for cycles.
+isCyclicUtil method:
+
+A recursive utility function that uses DFS to detect cycles in a subgraph reachable from a given vertex.
+Marks the current node as visited.
+Recurs through adjacent vertices, checking for cycles by verifying if an adjacent vertex is visited and not the parent of the current vertex.
+isCyclic method:
+
+Initializes an array visited to track visited vertices.
+Calls isCyclicUtil for each unvisited vertex to check for cycles in different DFS trees.
+Returns true if a cycle is found and false otherwise.
+main function:
+
+Creates instances of the Graph class and adds edges to represent two example graphs.
+Calls the isCyclic method to determine if each graph contains a cycle and prints the result.
+This program is designed to identify whether an undirected graph contains cycles, making it useful for detecting cyclic dependencies or loops within a graph structure.*/
+
+
+
+
+
+

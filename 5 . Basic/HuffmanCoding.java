@@ -76,3 +76,7 @@ public class HuffmanCoding {
         }
     }
 }
+
+/* This Java program implements Huffman coding, a compression algorithm. 
+    It defines a `HuffmanNode` class to represent nodes in the Huffman tree and a `HuffmanCoding` class with methods to build the Huffman tree and generate Huffman codes for characters. 
+    The `main` method demonstrates the usage by constructing a Huffman tree for given characters and frequencies, then printing the corresponding Huffman codes.*/

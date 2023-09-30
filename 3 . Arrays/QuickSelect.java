@@ -50,6 +50,7 @@ public class QuickSelect {
     }
 }
 
+
 /*This Java code implements the QuickSelect algorithm to find the k-th smallest element in an unsorted array. Here's a brief explanation:
 
 The quickSelect method is used to find the k-th smallest element in the arr array. It takes four parameters: the array arr, the left and right indices (initially 0 and arr.length - 1), and the value of k representing the desired rank of the element to find.
@@ -69,3 +70,16 @@ The partition method is a crucial part of the algorithm, which rearranges elemen
 In the main method, an example array arr is defined, and the code aims to find the 3rd smallest element (k = 2). The result is printed to the console.
 
 For the given example array {3, 2, 1, 5, 6, 4} and k = 2, the output will be: "The 3rd smallest element is: 3," as the 3rd smallest element in the array is 3.*/
+=======
+
+/*The provided Java code defines a `QuickSelect` class that implements the QuickSelect algorithm to find the kth smallest element in an unsorted integer array efficiently. Here's a short description:
+
+- The `quickSelect` method takes an integer array `arr`, a left index `left`, a right index `right`, and an integer `k` as input.
+- It recursively selects a pivot element, partitions the array such that smaller elements are on the left, and larger or equal elements are on the right.
+- If the pivot index equals `k`, it returns the kth smallest element.
+- If `k` is less than the pivot index, it recursively calls `quickSelect` on the left subarray.
+- If `k` is greater than the pivot index, it recursively calls `quickSelect` on the right subarray.
+- The `partition` method chooses a random pivot element within the given range and rearranges elements accordingly.
+- The `swap` method swaps two elements in an integer array.
+- In the `main` method, an example array is provided, and the code finds the 3rd smallest element (k = 2) using the `quickSelect` method and prints the result to the console.*/
+
