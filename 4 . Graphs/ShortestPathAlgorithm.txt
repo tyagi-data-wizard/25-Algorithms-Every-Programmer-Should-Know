@@ -1,0 +1,36 @@
+Problem Statement:
+You are given a weighted, directed graph represented as an adjacency list and a source vertex. Implement Dijkstra's algorithm to find the shortest path from the source vertex to all other vertices in the graph.
+
+Solution Code (Python):
+
+import heapq
+
+def dijkstra(graph, start):
+    distances = {vertex: float('infinity') for vertex in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_vertex = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_vertex]:
+            continue
+
+        for neighbor, weight in graph[current_vertex].items():
+            distance = current_distance + weight
+
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+
+    
+Explanation:
+
+We initialize distances to all vertices as infinity except for the start vertex, which is set to 0.
+We use a priority queue (min-heap) to keep track of vertices with the smallest tentative distances.
+While the priority queue is not empty, we extract the vertex with the smallest tentative distance.
+For each neighbor of the current vertex, we calculate the distance from the start vertex through the current vertex. If this distance is smaller than the current distance stored for the neighbor, we update it.
+The final distances dictionary will contain the shortest path distances from the start vertex to all other vertices in the graph.
