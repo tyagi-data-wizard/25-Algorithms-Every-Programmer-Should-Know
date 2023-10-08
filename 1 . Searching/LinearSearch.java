@@ -39,6 +39,28 @@ public class LinearSearch {
     }
 }
 
+/*
+The Java program provided is a simple implementation of the linear search algorithm. Here's a summary of what the program does:
+
+1. It imports the `Scanner` class to facilitate user input.
+
+2. It defines a `linearSearch` method that takes an integer array and a target integer as parameters. This method performs a linear search on the array, looking for the target element, and returns the index where the element is found or -1 if it's not found.
+
+3. In the `main` method:
+   - It creates a `Scanner` object for user input.
+   - It prompts the user to enter the length of an integer array.
+   - It creates an array with the specified length and prompts the user to enter its elements.
+   - It asks the user to enter the element they want to search for.
+   - It calls the `linearSearch` method to search for the specified element in the array.
+   - It displays the result of the search: either the index where the element was found or a message stating that the element was not found.
+
+4. Finally, it closes the `Scanner` object to release system resources.
+
+In essence, this program provides a basic interactive command-line interface for users to input an array, search for a specific element within that array using linear search, and receive feedback on whether the element exists in the array and its index if found.
+*/
+
+
+
 
 /* This Java program, named `LinearSearch`, demonstrates the implementation of the linear search algorithm. Linear search is a straightforward searching algorithm that sequentially scans through an array to find a specific target element. Here's how the program works:
 
